@@ -13,6 +13,8 @@ import {
 } from "lucide-react";
 import { Header, Footer } from "@/components/newsren/shell";
 import { Illustration } from "@/components/newsren/illustration";
+import { AIStoryBrief } from "@/components/newsren/ai-story-brief";
+import { AskNewsren } from "@/components/newsren/ask-newsren";
 import {
   getStory,
   stories,
@@ -91,6 +93,7 @@ export default async function StoryPage({
                   : ""}
               </p>
             </div>
+            <AIStoryBrief story={story} />
             <section id="brief" className="article-section">
               <p className="eyebrow">01 / THE STARTING POINT</p>
               <h2>What the evidence tells us.</h2>
@@ -237,6 +240,7 @@ export default async function StoryPage({
             </section>
           </article>
           <aside className="story-sidebar">
+            <AskNewsren story={story} />
             <div className="notebook">
               <div className="notebook-title">
                 <Files size={19} />
@@ -244,6 +248,9 @@ export default async function StoryPage({
               </div>
               <p>A little structure for a complicated question.</p>
               <nav aria-label="In this brief">
+                <a href="#ai-brief">
+                  <span>AI</span>Story brief <MoveRight size={15} />
+                </a>
                 <a href="#brief">
                   <span>01</span>The starting point <MoveRight size={15} />
                 </a>

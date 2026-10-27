@@ -53,6 +53,12 @@ flowchart LR
 5. The quality gate checks citations, unsupported language, and desk-specific rules.
 6. A human approves high-impact content before publication.
 
+## Phase 2 implementation boundary
+
+The prototype agent does not generate publishable prose. It classifies a bounded question, selects existing claim IDs, and reconstructs the answer from the stored claim ledger. A local validator confirms that claim text and citations are unchanged before returning the response.
+
+The optional OpenAI-compatible adapter is an evidence selector only. It returns claim IDs or an abstention flag; unknown IDs and malformed output are rejected. Provider errors and timeouts fall back to the deterministic selector. This preserves the same trust boundary whether no model, a free API, or a local Ollama endpoint is used.
+
 ## Failure behavior
 
 - Missing provider: continue with the reviewed prototype responses.

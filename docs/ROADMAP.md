@@ -22,10 +22,12 @@ Phase 1 includes four curated reference briefs, desk filters, search, expandable
 
 ## Phase 2 - Story intelligence
 
-- [ ] Implement the deterministic prototype agent and an optional provider adapter.
-- [ ] Add AI Story Brief.
-- [ ] Add the contextual Ask Newsren pane.
-- [ ] Add source-grounded response validation and abstention.
+- [x] Implement the deterministic prototype agent and an optional provider adapter.
+- [x] Add AI Story Brief.
+- [x] Add the contextual Ask Newsren pane.
+- [x] Add source-grounded response validation and abstention.
+
+Phase 2 keeps the assistant bounded to the active story. The default engine selects exact claim records and preserves their source IDs. An optional provider may select evidence IDs, but it cannot write displayed claims; invalid output falls back to the deterministic path. Personal, current-event, and out-of-scope questions receive an explicit evidence-boundary response.
 
 **Gate:** Every generated material claim is supported or explicitly marked uncertain.
 
