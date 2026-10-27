@@ -37,17 +37,26 @@ It should not provide an unrestricted site-wide chat experience during Week 1.
 
 Sports is deferred. It can later cover governance, rules, labor, health and safety, and disputed decisions where the evidence-map approach adds value.
 
-## 4. AI and cost strategy
+## 4. Prototype AI strategy
 
-The application uses a provider adapter rather than coupling product logic to one model.
+This is a weekly assignment prototype, not a production news platform. We will demonstrate the agentic workflow without hosting a model, building an ingestion fleet, or introducing paid infrastructure.
 
 Priority order:
 
-1. Free hosted inference for the public prototype.
-2. Ollama with the installed `qwen3.5:9b` model for local development.
-3. Pre-generated and human-reviewed outputs when no model is available.
+1. Seeded evidence bundles with pre-generated and human-reviewed outputs.
+2. A lightweight free external inference API only if it improves the demonstration and can be configured safely.
+3. Ollama with the installed `qwen3.5:9b` model as an optional local experiment.
 
-Source discovery and extraction remain deterministic where practical. Model calls are reserved for synthesis, question answering, and explanation modes. Results are cached by evidence-bundle version.
+The Ask Newsren experience must remain usable in demo mode without a model. Model calls, when enabled, are reserved for synthesis, question answering, and explanation modes. Results are cached by evidence-bundle version.
+
+Explicitly out of scope for Week 1:
+
+- cloud model hosting;
+- continuous web crawling;
+- production-scale retrieval infrastructure;
+- automated publishing;
+- accounts, billing, or enterprise controls; and
+- claims of production reliability.
 
 ## 5. Account and follow strategy
 

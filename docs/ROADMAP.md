@@ -3,7 +3,7 @@
 ## Phase 0 - Foundation
 
 - [x] Confirm product boundary and initial desks.
-- [x] Select a lightweight provider-agnostic architecture.
+- [x] Select a prototype-first architecture with no model-hosting requirement.
 - [x] Scaffold the web application.
 - [x] Document editorial and AI decisions.
 - [x] Create and push the public GitHub repository.
@@ -20,7 +20,7 @@
 
 ## Phase 2 - Story intelligence
 
-- [ ] Implement the provider adapter and deterministic demo provider.
+- [ ] Implement the deterministic prototype agent and an optional provider adapter.
 - [ ] Add AI Story Brief.
 - [ ] Add the contextual Ask Newsren pane.
 - [ ] Add source-grounded response validation and abstention.

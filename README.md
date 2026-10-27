@@ -39,11 +39,11 @@ Sports is a sensible future desk for rule changes, governance, labor, safety, an
 
 ## Architecture
 
-The UI is built with TypeScript, React, Vinext, and Tailwind CSS and is deployable as a Cloudflare Worker through OpenAI Sites. Agent logic is isolated behind a provider interface:
+The UI is built with TypeScript, React, Vinext, and Tailwind CSS and is deployable as a Cloudflare Worker through OpenAI Sites. This is a weekly prototype, so the architecture deliberately avoids model hosting and production-scale infrastructure:
 
-- A free hosted model is the intended public-demo provider.
-- The locally installed Ollama `qwen3.5:9b` model is supported as a development fallback.
-- Seeded, pre-reviewed outputs provide a no-model demo mode.
+- Seeded evidence bundles and reviewed outputs power the dependable public demo.
+- A small inference adapter can call a free external API if one is configured.
+- The locally installed Ollama `qwen3.5:9b` model is an optional development experiment, not a deployment requirement.
 
 See [Architecture](docs/ARCHITECTURE.md), [Product Decisions](docs/PRODUCT_DECISIONS.md), and [Roadmap](docs/ROADMAP.md).
 
@@ -60,7 +60,7 @@ npm run install:ci
 npm run dev
 ```
 
-The first implementation phase is in progress. Environment variables and provider setup will be documented when the agent API lands.
+The first implementation phase is in progress. No model or API key is required to run the prototype.
 
 ## Editorial safety
 

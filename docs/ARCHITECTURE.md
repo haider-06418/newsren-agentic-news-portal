@@ -4,8 +4,8 @@
 
 - Keep browser-side computation light.
 - Preserve an auditable chain from every claim to its sources.
-- Allow the model provider to change without changing the editorial workflow.
-- Keep the public demo usable when inference is unavailable.
+- Demonstrate the editorial and agentic workflow without hosting a model.
+- Keep the public demo fully usable without inference or API credentials.
 
 ## System shape
 
@@ -31,7 +31,7 @@ flowchart LR
 - **Web:** Vinext, React, TypeScript, and Tailwind CSS.
 - **Hosting:** Cloudflare Worker deployment through OpenAI Sites.
 - **Persistence:** browser storage for Week 1 follows; D1 when durable user data is introduced.
-- **AI providers:** hosted free-tier adapter, Ollama adapter, and deterministic demo adapter.
+- **AI modes:** deterministic prototype agent by default; optional external API and Ollama adapters.
 - **Retrieval:** approved feeds and first-party or authoritative pages only.
 
 ## Core domain objects
@@ -55,7 +55,7 @@ flowchart LR
 
 ## Failure behavior
 
-- Missing provider: use reviewed demo output.
+- Missing provider: continue with the reviewed prototype responses.
 - Provider timeout: preserve the user's question and offer evidence navigation.
 - Insufficient support: answer with an explicit abstention and show what is missing.
 - Conflicting sources: display the disagreement with attribution and dates.
