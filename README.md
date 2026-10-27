@@ -6,6 +6,8 @@ The Newsren is an agentic news-intelligence prototype for understanding evolving
 
 The original product brief is preserved in [`docs/Newsren_Plan.pdf`](docs/Newsren_Plan.pdf).
 
+![The Newsren Editorial Navy homepage](docs/previews/editorial-navy-home.png)
+
 ## Product thesis
 
 Newsren is not a generic news chatbot and does not try to produce a single authoritative opinion. It creates an evidence map around a developing question:
@@ -17,7 +19,7 @@ Newsren is not a generic news chatbot and does not try to produce a single autho
 5. What remains uncertain?
 6. What should readers watch next?
 
-The flagship prototype story will focus on changing United States rules and guidance affecting international students. This is a strong test case because policy announcements, agency guidance, court actions, university interpretation, and lived impact may change on different timelines.
+The flagship prototype story focuses on changing United States rules and guidance affecting international students. This is a strong test case because policy announcements, agency guidance, court actions, university interpretation, and lived impact may change on different timelines.
 
 ## Initial desks
 
@@ -31,7 +33,7 @@ Sports is a sensible future desk for rule changes, governance, labor, safety, an
 ## Week 1 prototype
 
 - Editorial homepage and four desks
-- One end-to-end evidence-grounded story
+- Four end-to-end evidence-grounded reference briefs
 - AI Story Brief with claim-level sources
 - A contextual **Ask Newsren** pane on the right side of story pages
 - Student, educator, and professional explanation modes
@@ -47,7 +49,7 @@ The UI is built with TypeScript, React, Vinext, and Tailwind CSS and is deployab
 - A small inference adapter can call a free external API if one is configured.
 - The locally installed Ollama `qwen3.5:9b` model is an optional development experiment, not a deployment requirement.
 
-See [Architecture](docs/ARCHITECTURE.md), [Product Decisions](docs/PRODUCT_DECISIONS.md), and [Roadmap](docs/ROADMAP.md).
+See [Architecture](docs/ARCHITECTURE.md), [Product Decisions](docs/PRODUCT_DECISIONS.md), [Editorial Navy design refresh](docs/DESIGN_REFRESH.md), and [Roadmap](docs/ROADMAP.md).
 
 ## Development
 
