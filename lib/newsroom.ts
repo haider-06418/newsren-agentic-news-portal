@@ -372,7 +372,7 @@ export const stories: Story[] = [
         "Demo event only: imagine that a newly selected FOMC statement is attached with its meeting date.",
       materiality:
         "The dated primary document would let the brief discuss a specific decision while keeping market forecasts out of scope.",
-      affectedClaimIds: ["c2", "c3"],
+      affectedClaimIds: ["c2", "c3", "c4"],
     },
     brief:
       "The Federal Reserve's FOMC overview links to statements, minutes, and meeting materials. These are distinct parts of a source trail. This brief explains where to begin reading; it makes no claim about today's rate decision or future market returns.",
@@ -400,6 +400,14 @@ export const stories: Story[] = [
         sourceIds: ["fed-fomc"],
         detail:
           "Newsren's distinction between reporting a monetary-policy source and forecasting an asset's performance.",
+      },
+      {
+        id: "c4",
+        text: "This bundle does not establish a current rate decision or a future market return.",
+        kind: "Unresolved",
+        sourceIds: [],
+        detail:
+          "A dated meeting statement would be needed for a specific policy decision, while future returns cannot be established from the institutional overview.",
       },
     ],
     perspectives: [

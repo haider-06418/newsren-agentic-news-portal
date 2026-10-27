@@ -69,6 +69,9 @@ export default function AboutPage() {
           <Link href="/#stories" className="button button-dark">
             Explore the reference briefs <MoveRight size={17} />
           </Link>
+          <Link href="/evaluation" className="button button-outline">
+            View the release scorecard <MoveRight size={17} />
+          </Link>
         </div>
       </main>
       <Footer />

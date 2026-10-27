@@ -43,7 +43,9 @@ Phase 3 adds deterministic audience lenses and a browser-local follow desk. Seed
 
 ## Phase 4 - Evaluation and release
 
-- [ ] Add trust, usefulness, accessibility, latency, and cost checks.
-- [ ] Complete responsive browser QA.
+- [x] Add trust, usefulness, accessibility, latency, and cost checks.
+- [x] Complete responsive browser QA.
 - [ ] Publish the demonstration site.
-- [ ] Record a short demo and architecture walkthrough.
+- [x] Record a short demo and architecture walkthrough.
+
+The release harness, public scorecard, 390-pixel browser QA, visual demo, and walkthrough are complete. Deployment to the separate existing Sites source repository remains pending explicit user confirmation; the public GitHub repository is not automatically the Sites deployment source.

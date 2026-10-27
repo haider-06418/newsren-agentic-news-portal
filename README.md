@@ -62,13 +62,13 @@ npm run install:ci
 npm run dev
 ```
 
-Phases 1 through 3 are implemented. No model or API key is required to run the prototype.
+Phases 1 through 3 and the Phase 4 release candidate are implemented. No model or API key is required to run the prototype.
 
 The current experience includes four reference briefs, desk filters, search, expandable evidence, source dates and provenance, an AI Story Brief, and the contextual Ask Newsren pane. Ask Newsren returns validated story-scoped answers with claim-level citations or explicitly abstains when evidence is missing. Student, educator, and professional modes reuse the same claim ledger. Readers can save one question per story locally and inspect explicitly simulated material-change events in the Your follows desk.
 
 The local preview normally serves at `http://127.0.0.1:5173`. Stop it with Ctrl+C when finished; start it again with `npm run dev`. No background service is required while the project is idle.
 
-See the [Phase 1 handoff](docs/PHASE_1.md), [Phase 2 handoff](docs/PHASE_2.md), and [Phase 3 handoff](docs/PHASE_3.md) for scope, source limitations, and verification.
+Run `npm run evaluate` for the trust, usefulness, accessibility-structure, latency, and default-cost release gate. See the [evaluation report](docs/EVALUATION.md), [demo walkthrough](docs/DEMO_WALKTHROUGH.md), and phase handoffs for scope, limitations, and verification.
 
 ## Editorial safety
 
