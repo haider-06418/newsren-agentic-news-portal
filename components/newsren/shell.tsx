@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Asterisk, MoveRight } from "lucide-react";
+import { ArrowUpRight, Asterisk, Bell, MoveRight } from "lucide-react";
 import { desks, deskSlug } from "@/lib/newsroom";
 export function Brand() {
   return (
@@ -30,9 +30,14 @@ export function Header() {
           <br />
           <strong>A clearer perspective.</strong>
         </div>
-        <Link href="/about" className="text-link">
-          How Newsren works <ArrowUpRight size={15} />
-        </Link>
+        <div className="header-actions">
+          <Link href="/follows" className="text-link">
+            Your follows <Bell size={14} />
+          </Link>
+          <Link href="/about" className="text-link">
+            How Newsren works <ArrowUpRight size={15} />
+          </Link>
+        </div>
       </header>
       <nav className="desk-nav" aria-label="News desks">
         <Link href="/" className="nav-all">

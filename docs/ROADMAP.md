@@ -33,9 +33,11 @@ Phase 2 keeps the assistant bounded to the active story. The default engine sele
 
 ## Phase 3 - Learn and follow
 
-- [ ] Add student, educator, and professional explanation modes.
-- [ ] Save follows locally.
-- [ ] Demonstrate material-change detection with seeded updates.
+- [x] Add student, educator, and professional explanation modes.
+- [x] Save follows locally.
+- [x] Demonstrate material-change detection with seeded updates.
+
+Phase 3 adds deterministic audience lenses and a browser-local follow desk. Seeded updates are visibly hypothetical and are compared against each follow's last-reviewed version; they do not imply live monitoring, new reporting, or a background service.
 
 **Gate:** A user can discover, understand, investigate, and follow one question end to end.
 

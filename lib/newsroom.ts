@@ -23,6 +23,16 @@ export type Claim = {
   sourceIds: string[];
   detail: string;
 };
+export type StoryUpdate = {
+  id: string;
+  version: number;
+  detectedAt: string;
+  label: "Seeded simulation";
+  title: string;
+  summary: string;
+  materiality: string;
+  affectedClaimIds: string[];
+};
 export type Story = {
   slug: string;
   desk: Desk;
@@ -33,6 +43,8 @@ export type Story = {
   readingMinutes: number;
   illustration: "campus" | "network" | "policy" | "markets";
   reviewStatus: "Needs editorial review";
+  version: number;
+  seededUpdate: StoryUpdate;
   brief: string;
   claims: Claim[];
   perspectives: { label: string; text: string; type: "Editorial lens" }[];
@@ -94,6 +106,19 @@ export const stories: Story[] = [
     readingMinutes: 5,
     illustration: "campus",
     reviewStatus: "Needs editorial review",
+    version: 1,
+    seededUpdate: {
+      id: "student-policy-primary-document",
+      version: 2,
+      detectedAt: "2026-10-27",
+      label: "Seeded simulation",
+      title: "A hypothetical primary document is added to the bundle.",
+      summary:
+        "Demo event only: imagine that a new agency document identifies the affected student programs and an effective date.",
+      materiality:
+        "That evidence could resolve part of the brief's central scope and timing gap, so Newsren would ask for editorial re-review.",
+      affectedClaimIds: ["c3", "c4"],
+    },
     brief:
       "This reference brief establishes a starting point for evaluating student-policy headlines. The sources explain visa applications and the difference between F-1 and J-1 programs. They do not establish that a new rule took effect today or determine an individual student's eligibility.",
     claims: [
@@ -181,6 +206,19 @@ export const stories: Story[] = [
     readingMinutes: 3,
     illustration: "network",
     reviewStatus: "Needs editorial review",
+    version: 1,
+    seededUpdate: {
+      id: "ai-product-evaluation",
+      version: 2,
+      detectedAt: "2026-10-27",
+      label: "Seeded simulation",
+      title: "A hypothetical product evaluation enters the bundle.",
+      summary:
+        "Demo event only: imagine that a product-specific benchmark with a stated methodology and limitations is published.",
+      materiality:
+        "Product-level evidence could change what this brief can responsibly say beyond the general NIST framework.",
+      affectedClaimIds: ["c2", "c3"],
+    },
     brief:
       "NIST's Generative AI Profile accompanies its AI Risk Management Framework. It helps frame how organizations think about trustworthy AI; it should not be read as a test result for a particular model or application.",
     claims: [
@@ -248,6 +286,19 @@ export const stories: Story[] = [
     readingMinutes: 3,
     illustration: "policy",
     reviewStatus: "Needs editorial review",
+    version: 1,
+    seededUpdate: {
+      id: "policy-scope-document",
+      version: 2,
+      detectedAt: "2026-10-27",
+      label: "Seeded simulation",
+      title: "A hypothetical policy text clarifies who is covered.",
+      summary:
+        "Demo event only: imagine that an authoritative document names the affected program and population.",
+      materiality:
+        "A defined scope could replace an umbrella interpretation with a claim tied to an identifiable policy text.",
+      affectedClaimIds: ["c2", "c3"],
+    },
     brief:
       "BridgeUSA describes F-1 and J-1 as different routes for studying in the United States. That distinction is a useful first filter when reading a broad claim about international students. This brief does not report a new policy announcement.",
     claims: [
@@ -310,6 +361,19 @@ export const stories: Story[] = [
     readingMinutes: 3,
     illustration: "markets",
     reviewStatus: "Needs editorial review",
+    version: 1,
+    seededUpdate: {
+      id: "fomc-meeting-material",
+      version: 2,
+      detectedAt: "2026-10-27",
+      label: "Seeded simulation",
+      title: "A hypothetical meeting statement is added to the trail.",
+      summary:
+        "Demo event only: imagine that a newly selected FOMC statement is attached with its meeting date.",
+      materiality:
+        "The dated primary document would let the brief discuss a specific decision while keeping market forecasts out of scope.",
+      affectedClaimIds: ["c2", "c3"],
+    },
     brief:
       "The Federal Reserve's FOMC overview links to statements, minutes, and meeting materials. These are distinct parts of a source trail. This brief explains where to begin reading; it makes no claim about today's rate decision or future market returns.",
     claims: [

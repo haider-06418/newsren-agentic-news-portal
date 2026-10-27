@@ -39,7 +39,7 @@ export default function AboutPage() {
             [
               "04",
               "Keep the reader in control.",
-              "Read the brief, inspect individual claims, and follow the original publisher. The evidence should remain useful without an AI response.",
+              "Read the brief, choose an explanation mode, inspect individual claims, and follow one question locally. The evidence remains useful without an AI response.",
             ],
           ].map(([number, title, body]) => (
             <section key={number}>
@@ -61,9 +61,10 @@ export default function AboutPage() {
             advice.
           </p>
           <p>
-            Conversational research and saved topic following are planned next.
-            This edition lets you review the reading experience and its source
-            trail first.
+            Ask Newsren is bounded to each story&apos;s evidence. Saved follows stay
+            in this browser. Change alerts are clearly labeled simulations for
+            demonstrating the workflow; this edition does not perform live
+            monitoring or background notifications.
           </p>
           <Link href="/#stories" className="button button-dark">
             Explore the reference briefs <MoveRight size={17} />

@@ -51,3 +51,16 @@ test("source provenance is explicit and valid, without inventing publication dat
       assert.ok(Number.isFinite(Date.parse(event.date)));
   }
 });
+
+test("seeded updates are explicitly simulated and reference real story claims", () => {
+  for (const story of stories) {
+    assert.ok(story.seededUpdate.version > story.version);
+    assert.equal(story.seededUpdate.label, "Seeded simulation");
+    assert.match(story.seededUpdate.summary, /^Demo event only:/);
+    assert.ok(Number.isFinite(Date.parse(story.seededUpdate.detectedAt)));
+    assert.ok(story.seededUpdate.affectedClaimIds.length > 0);
+    const claimIds = new Set(story.claims.map((claim) => claim.id));
+    for (const id of story.seededUpdate.affectedClaimIds)
+      assert.ok(claimIds.has(id), `${story.slug}: unknown affected claim ${id}`);
+  }
+});

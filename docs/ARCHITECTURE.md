@@ -59,6 +59,14 @@ The prototype agent does not generate publishable prose. It classifies a bounded
 
 The optional OpenAI-compatible adapter is an evidence selector only. It returns claim IDs or an abstention flag; unknown IDs and malformed output are rejected. Provider errors and timeouts fall back to the deterministic selector. This preserves the same trust boundary whether no model, a free API, or a local Ollama endpoint is used.
 
+## Phase 3 local state and change simulation
+
+Audience explainers are pure transformations over the active story's claim and question records. They select a reading path but do not alter claim text, support state, or citations.
+
+Follows use versioned browser storage under `newsren:follows:v1`. One record stores the story slug, bounded question, audience mode, creation time, and last-seen version. Parsing rejects malformed entries. No account, server persistence, notification worker, or scheduled monitor is introduced.
+
+Each story contains one clearly labeled seeded simulation at a later demo version. Material-change detection is a version comparison plus a list of existing affected claim IDs. Reviewing an update advances only that follow's local last-seen version. This demonstrates the product loop without presenting hypothetical evidence as news.
+
 ## Failure behavior
 
 - Missing provider: continue with the reviewed prototype responses.

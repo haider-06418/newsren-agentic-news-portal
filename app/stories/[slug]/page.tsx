@@ -15,6 +15,8 @@ import { Header, Footer } from "@/components/newsren/shell";
 import { Illustration } from "@/components/newsren/illustration";
 import { AIStoryBrief } from "@/components/newsren/ai-story-brief";
 import { AskNewsren } from "@/components/newsren/ask-newsren";
+import { AudienceExplainer } from "@/components/newsren/audience-explainer";
+import { FollowStoryCard } from "@/components/newsren/follow-story-card";
 import {
   getStory,
   stories,
@@ -111,6 +113,7 @@ export default async function StoryPage({
                 ))}
               </p>
             </section>
+            <AudienceExplainer story={story} />
             <section id="evidence" className="article-section">
               <p className="eyebrow">02 / INSPECT THE EVIDENCE</p>
               <h2>One claim at a time.</h2>
@@ -241,6 +244,7 @@ export default async function StoryPage({
           </article>
           <aside className="story-sidebar">
             <AskNewsren story={story} />
+            <FollowStoryCard story={story} />
             <div className="notebook">
               <div className="notebook-title">
                 <Files size={19} />
@@ -253,6 +257,9 @@ export default async function StoryPage({
                 </a>
                 <a href="#brief">
                   <span>01</span>The starting point <MoveRight size={15} />
+                </a>
+                <a href="#learning-mode">
+                  <span>MODE</span>Learn your way <MoveRight size={15} />
                 </a>
                 <a href="#evidence">
                   <span>02</span>Inspect the evidence <MoveRight size={15} />
