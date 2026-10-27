@@ -2,11 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Starter Project",
-  description: "A clean starting point for building your site.",
-  other: {
-    "codex-preview": "development",
-  },
+  title: "The Newsren | Follow a question. Find your perspective.",
+  description:
+    "Explore the evidence, connect the context, and understand what remains uncertain. An agentic news intelligence course prototype.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

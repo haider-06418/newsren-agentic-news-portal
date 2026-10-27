@@ -11,10 +11,12 @@
 
 ## Phase 1 - Editorial experience
 
-- [ ] Build the responsive homepage and desk navigation.
-- [ ] Add the flagship Education & Immigration story.
-- [ ] Model sources, evidence, claims, and timeline events.
-- [ ] Add evidence and editorial-status UI.
+- [x] Build the responsive homepage and desk navigation.
+- [x] Add the flagship Education & Immigration reference brief.
+- [x] Model sources, evidence, claims, and research-trail events.
+- [x] Add evidence and editorial-status UI.
+
+Phase 1 includes four curated reference briefs, desk filters, search, expandable claims, source provenance, the story notebook, related briefs, an approach page, and a missing-story page. Each brief is labeled as a dated snapshot awaiting editorial review. The research trail distinguishes source publication from retrieval; it does not fabricate a current news timeline.
 
 **Gate:** The story can be understood and audited without invoking a model.
 

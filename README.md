@@ -62,7 +62,13 @@ npm run install:ci
 npm run dev
 ```
 
-The first implementation phase is in progress. No model or API key is required to run the prototype.
+Phase 1 is implemented. No model or API key is required to run the prototype.
+
+The current experience includes four reference briefs, desk filters, search, expandable evidence, source dates and provenance, a research trail, and a right-side story notebook. Briefs are curated source snapshots and await human editorial review. Conversational research and saved follows are scheduled for the next phases.
+
+The local preview normally serves at `http://127.0.0.1:5173`. Stop it with Ctrl+C when finished; start it again with `npm run dev`. No background service is required while the project is idle.
+
+See [Phase 1 handoff](docs/PHASE_1.md) for scope, source limitations, and verification.
 
 ## Editorial safety
 
