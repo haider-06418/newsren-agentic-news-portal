@@ -6,8 +6,8 @@
 - [x] Select a lightweight provider-agnostic architecture.
 - [x] Scaffold the web application.
 - [x] Document editorial and AI decisions.
-- [ ] Create and push the public GitHub repository.
-- [ ] Register the private development deployment.
+- [x] Create and push the public GitHub repository.
+- [x] Register the private development deployment.
 
 ## Phase 1 - Editorial experience
 
