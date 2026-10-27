@@ -4,6 +4,8 @@ The Newsren is an agentic news-intelligence prototype for understanding evolving
 
 > Week 1 Assignment for the course 49-772 A2 **Software Engineering Management, Fall 2026 offering at Carnegie Mellon University - Silicon Valley**.
 
+The original product brief is preserved in [`docs/Newsren_Plan.pdf`](docs/Newsren_Plan.pdf).
+
 ## Product thesis
 
 Newsren is not a generic news chatbot and does not try to produce a single authoritative opinion. It creates an evidence map around a developing question:
