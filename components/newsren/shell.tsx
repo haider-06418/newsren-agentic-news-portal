@@ -18,17 +18,17 @@ export function Header() {
         Skip to content
       </a>
       <div className="edition-bar">
-        <span>INDEPENDENT THINKING. CONNECTED EVIDENCE.</span>
+        <span>EVIDENCE-LED NEWS INTELLIGENCE</span>
         <span>
-          WEEK 01 <i /> REFERENCE EDITION
+          SOURCE INDEX <i /> UPDATED OCT 27, 2026
         </span>
       </div>
       <header className="site-header">
         <Brand />
         <div className="header-note">
-          A little more context.
+          See what holds up.
           <br />
-          <strong>A clearer perspective.</strong>
+          <strong>Know what remains open.</strong>
         </div>
         <div className="header-actions">
           <Link href="/follows" className="text-link">
@@ -49,7 +49,7 @@ export function Header() {
           </Link>
         ))}
         <span className="nav-mark">
-          Clarity over noise <Asterisk size={15} />
+          Evidence before opinion <Asterisk size={15} />
         </span>
       </nav>
     </>
@@ -71,12 +71,12 @@ export function Footer() {
       </div>
       <div className="footer-bottom">
         <p>
-          Week 1 Assignment · 49-772 A2 Software Engineering Management
+          Evidence-led news intelligence
           <br />
-          Fall 2026 · Carnegie Mellon University – Silicon Valley
+          Original sources · Visible uncertainty · Reader-controlled context
         </p>
         <p>
-          Prototype reference edition · Source snapshot: Oct 27, 2026
+          Coverage updated Oct 27, 2026
           <br />© 2026 The Newsren ·{" "}
           <a
             href="https://github.com/haider-06418/newsren-agentic-news-portal"

@@ -14,9 +14,9 @@ export function FollowDashboard() {
       <div className="follows-empty">
         <Bell size={30} />
         <h2>Your follow desk is empty.</h2>
-        <p>Open a reference brief and save one question to monitor locally.</p>
+        <p>Open an evidence brief and save one question to follow.</p>
         <Link href="/#stories" className="button button-dark">
-          Explore the reading room <MoveRight size={16} />
+          Explore today&apos;s briefing <MoveRight size={16} />
         </Link>
       </div>
     );
@@ -27,6 +27,10 @@ export function FollowDashboard() {
         const story = getStory(follow.storySlug);
         if (!story) return null;
         const change = detectMaterialChange(follow, story);
+        const previewSummary = change?.update.summary.replace(
+          /^Demo event only: imagine that /,
+          "Preview scenario: ",
+        );
         return (
           <article className="follow-item" key={follow.storySlug}>
             <div className="follow-item-topline">
@@ -38,7 +42,7 @@ export function FollowDashboard() {
                 <p className="eyebrow">YOUR QUESTION</p>
                 <h2>{follow.question}</h2>
                 <Link href={`/stories/${story.slug}`}>
-                  Open reference brief <MoveRight size={14} />
+                  Open evidence brief <MoveRight size={14} />
                 </Link>
               </div>
               <button
@@ -52,13 +56,13 @@ export function FollowDashboard() {
             {change ? (
               <div className="material-change">
                 <div className="change-heading">
-                  <span><CircleHelp size={13} /> {change.update.label}</span>
+                  <span><CircleHelp size={13} /> UPDATE PREVIEW</span>
                   <time dateTime={change.update.detectedAt}>
                     {formatSourceDate(change.update.detectedAt)}
                   </time>
                 </div>
                 <h3>{change.update.title}</h3>
-                <p>{change.update.summary}</p>
+                <p>{previewSummary}</p>
                 <div className="materiality-note">
                   <strong>Why Newsren flags it as material</strong>
                   <p>{change.update.materiality}</p>
@@ -70,15 +74,15 @@ export function FollowDashboard() {
                   ))}
                 </div>
                 <button onClick={() => review(story)} className="button button-dark">
-                  Mark demo update reviewed <Check size={15} />
+                  Mark update reviewed <Check size={15} />
                 </button>
               </div>
             ) : (
               <div className="follow-current">
                 <Check size={16} />
                 <div>
-                  <strong>You’re caught up with the seeded demo.</strong>
-                  <p>There is no unreviewed simulated change for this question.</p>
+                  <strong>You&apos;re caught up.</strong>
+                  <p>There are no unreviewed preview updates for this question.</p>
                 </div>
               </div>
             )}

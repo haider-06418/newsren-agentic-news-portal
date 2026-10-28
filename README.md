@@ -6,7 +6,7 @@ The Newsren is an agentic news-intelligence prototype for understanding evolving
 
 The original product brief is preserved in [`docs/Newsren_Plan.pdf`](docs/Newsren_Plan.pdf).
 
-![The Newsren Editorial Navy homepage](docs/previews/editorial-navy-home.png)
+![The Newsren product homepage](docs/previews/product-home.png)
 
 ## Live demo
 

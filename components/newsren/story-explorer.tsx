@@ -33,12 +33,12 @@ export function StoryExplorer() {
     <section id="stories" className="stories-section">
       <div className="section-heading">
         <div>
-          <p className="eyebrow">THE READING ROOM</p>
+          <p className="eyebrow">TODAY&apos;S BRIEFING</p>
           <h2>
-            Follow your curiosity<span>.</span>
+            Stories worth understanding<span>.</span>
           </h2>
         </div>
-        <span className="edition-count">04 BRIEFS / 04 DESKS</span>
+        <span className="edition-count">04 STORIES / 04 DESKS</span>
       </div>
       <div className="explorer-tools">
         <div className="filter-tabs" role="group" aria-label="Filter by desk">
@@ -106,7 +106,7 @@ export function StoryExplorer() {
             <p>{story.description}</p>
             <div className="card-bottom">
               <span>
-                <span className="small-dot" /> Reference brief
+                <span className="small-dot" /> Evidence brief
               </span>
               <span>
                 {story.sources.length}{" "}
@@ -120,7 +120,7 @@ export function StoryExplorer() {
         <div className="empty-state">
           <Search size={28} />
           <h3>No briefs match that question.</h3>
-          <p>Try another word or browse the full reference edition.</p>
+          <p>Try another word or browse today&apos;s full briefing.</p>
           <button
             className="button button-outline"
             onClick={() => {

@@ -137,8 +137,8 @@ export function AskNewsren({ story }: { story: Story }) {
           <div className="answer-engine">
             <ShieldCheck size={13} />
             {answer.engine === "deterministic"
-              ? "Validated demo response"
-              : "Provider selection · locally validated"}
+              ? "Evidence-checked response"
+              : "Evidence selection · locally validated"}
           </div>
         </div>
       )}
@@ -169,7 +169,7 @@ export function AskNewsren({ story }: { story: Story }) {
         </button>
       </form>
       <p className="ask-footnote">
-        Prototype assistant · not legal, financial, or individual advice
+        Limited to this story&apos;s evidence · not individual advice
       </p>
     </section>
   );

@@ -3741,3 +3741,26 @@ h2 em {
     box-shadow: 6px 6px 0 #e3e9ef;
   }
 }
+
+/* Product chrome */
+.header-actions .text-link:first-child {
+  min-height: 40px;
+  padding: 10px 15px;
+  border: 1px solid var(--navy);
+  background: var(--navy);
+  color: white;
+}
+
+.header-actions .text-link:first-child:hover {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: white;
+}
+
+@media (max-width: 760px) {
+  .header-actions .text-link:first-child {
+    min-height: 36px;
+    padding: 8px 11px;
+    font-size: 10px;
+  }
+}

@@ -16,8 +16,9 @@ export default function AboutPage() {
           starts with <em>better questions.</em>
         </h1>
         <p className="about-lede">
-          The Newsren is a course prototype exploring how evidence, context, and
-          uncertainty can make developing news easier to understand.
+          The Newsren is evidence-led news intelligence for developing stories.
+          It connects original sources, competing interpretations, and open
+          questions in one place—without pretending uncertainty has disappeared.
         </p>
         <div className="about-principles">
           {[
@@ -52,25 +53,20 @@ export default function AboutPage() {
           ))}
         </div>
         <div className="about-disclosure">
-          <h2>About this edition</h2>
+          <h2>Coverage boundaries</h2>
           <p>
-            These four reference briefs were assembled for a weekly assignment
-            from sources consulted on October 27, 2026. They await human
-            editorial approval. They are not a live feed, do not monitor
-            changes, and do not provide case-specific immigration or investment
-            advice.
+            Newsren currently covers four developing questions using sources
+            consulted on October 27, 2026. Every story shows its evidence
+            window and unresolved claims. Coverage is not a live feed and does
+            not provide case-specific immigration or investment advice.
           </p>
           <p>
             Ask Newsren is bounded to each story&apos;s evidence. Saved follows stay
-            in this browser. Change alerts are clearly labeled simulations for
-            demonstrating the workflow; this edition does not perform live
-            monitoring or background notifications.
+            in this browser. Following is in preview: update cards are clearly
+            labeled illustrative until live monitoring and notifications launch.
           </p>
           <Link href="/#stories" className="button button-dark">
-            Explore the reference briefs <MoveRight size={17} />
-          </Link>
-          <Link href="/evaluation" className="button button-outline">
-            View the release scorecard <MoveRight size={17} />
+            Explore today&apos;s briefing <MoveRight size={17} />
           </Link>
         </div>
       </main>

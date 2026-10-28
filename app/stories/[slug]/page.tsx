@@ -53,7 +53,7 @@ export default async function StoryPage({
       <main id="main" className="story-page">
         <div className="story-breadcrumb">
           <Link href="/#stories">
-            <ArrowLeft size={14} /> The reading room
+            <ArrowLeft size={14} /> Today&apos;s briefing
           </Link>
           <span>{story.desk}</span>
         </div>
@@ -64,14 +64,14 @@ export default async function StoryPage({
           <div className="story-byline">
             <span className="byline-avatar">n.</span>
             <div>
-              <strong>The Newsren reference desk</strong>
+              <strong>The Newsren evidence desk</strong>
               <span>
-                Source snapshot · {snapshotDate} · {story.readingMinutes} min
+                Updated · {snapshotDate} · {story.readingMinutes} min
                 read
               </span>
             </div>
             <span className="review-badge">
-              <Clock3 size={13} /> {story.reviewStatus}
+              <Clock3 size={13} /> Dated evidence window
             </span>
           </div>
         </div>
@@ -84,8 +84,9 @@ export default async function StoryPage({
             <div className="reference-notice">
               <Info size={17} />
               <p>
-                This is a curated reference brief. It explains a source bundle
-                and does not report a newly verified development.
+                Newsren connects the original evidence behind this story. This
+                page reflects a dated source window and does not claim a newly
+                verified development.
                 {story.desk === "Education & Immigration" ||
                 story.desk === "Policy & Society"
                   ? " General information, not individual immigration advice."

@@ -41,8 +41,8 @@ export function FollowStoryCard({ story }: { story: Story }) {
       {existing && saved ? (
         <div className="follow-saved" role="status">
           <BookmarkCheck size={19} />
-          <strong>Saved on this browser.</strong>
-          <p>No account or background service is running.</p>
+          <strong>Added to your follows.</strong>
+          <p>Saved privately on this device.</p>
         </div>
       ) : (
         <form onSubmit={submit}>
@@ -75,7 +75,7 @@ export function FollowStoryCard({ story }: { story: Story }) {
       {existing && (
         <div className="follow-card-status">
           <span className={materialChange ? "change-ready" : "change-reviewed"}>
-            {materialChange ? "1 seeded change ready" : "Demo update reviewed"}
+            {materialChange ? "1 update preview ready" : "Preview update reviewed"}
           </span>
           <Link href="/follows">
             Your follows <MoveRight size={14} />

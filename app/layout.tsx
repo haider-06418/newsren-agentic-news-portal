@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "The Newsren | Follow a question. Find your perspective.",
   description:
-    "Explore the evidence, connect the context, and understand what remains uncertain. An agentic news intelligence course prototype.",
+    "Evidence-led news intelligence for developing stories. Explore original sources, compare perspectives, and see what remains uncertain.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

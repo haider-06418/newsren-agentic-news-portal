@@ -20,16 +20,16 @@ export default function Home() {
       <main id="main">
         <section className="intro-row">
           <p className="eyebrow">
-            <span className="status-dot" /> THE REFERENCE EDITION
+            <span className="status-dot" /> TODAY&apos;S BRIEFING
           </p>
           <p>
             Tuesday, October 27, 2026 <span className="intro-separator">/</span>{" "}
-            Built for the curious.
+            4 developing stories across 4 desks
           </p>
         </section>
         <section className="hero">
           <div className="hero-copy">
-            <p className="eyebrow">LESS NOISE. MORE UNDERSTANDING.</p>
+            <p className="eyebrow">TODAY&apos;S LEAD QUESTION</p>
             <h1>
               News moves fast.
               <br />
@@ -56,7 +56,7 @@ export default function Home() {
           <div className="hero-feature">
             <Illustration kind="campus" className="feature-illustration" />
             <div className="feature-tag">
-              <span className="status-dot" /> IN FOCUS <span>01 / 04</span>
+              <span className="status-dot" /> LEAD BRIEF <span>01 / 04</span>
             </div>
             <div className="feature-caption">
               <p className="eyebrow">EDUCATION & IMMIGRATION</p>
@@ -75,26 +75,26 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="approach-strip" aria-label="The Newsren approach">
+        <section className="approach-strip" aria-label="Newsren product features">
           <div>
             <span>01</span>
             <p>
-              <strong>Start with the evidence.</strong> Trace claims to their
-              original sources.
+              <strong>Evidence linked.</strong> Every material claim stays
+              connected to its original source.
             </p>
           </div>
           <div>
             <span>02</span>
             <p>
-              <strong>See the whole question.</strong> Keep facts and
-              interpretation distinct.
+              <strong>Multiple reading lenses.</strong> See how the same
+              evidence matters to different readers.
             </p>
           </div>
           <div>
             <span>03</span>
             <p>
-              <strong>Understand what is missing.</strong> Make room for
-              unresolved questions.
+              <strong>Questions worth following.</strong> Save the uncertainty
+              that matters—not just another headline.
             </p>
           </div>
         </section>
@@ -103,12 +103,12 @@ export default function Home() {
             <section id="stories" className="stories-section" aria-busy="true">
               <div className="section-heading">
                 <div>
-                  <p className="eyebrow">THE READING ROOM</p>
+                  <p className="eyebrow">TODAY&apos;S BRIEFING</p>
                   <h2>
-                    Follow your curiosity<span>.</span>
+                    Stories worth understanding<span>.</span>
                   </h2>
                 </div>
-                <span className="edition-count">LOADING THE EDITION</span>
+                <span className="edition-count">LOADING THE BRIEFING</span>
               </div>
             </section>
           }
@@ -120,18 +120,18 @@ export default function Home() {
             <BookOpen size={29} strokeWidth={1.3} />
           </div>
           <div>
-            <p className="eyebrow">A DIFFERENT WAY TO READ</p>
+            <p className="eyebrow">BUILT FOR DEVELOPING STORIES</p>
             <h2>
-              Good questions deserve
+              Know what changed.
               <br />
-              <em>more than a quick take.</em>
+              <em>See what still hasn&apos;t.</em>
             </h2>
           </div>
           <div>
             <p>
-              Each brief gives you a starting point, a source trail, and the
-              questions the evidence cannot answer yet. Build your perspective
-              with the context in view.
+              Newsren connects the source trail, the strongest supported
+              claims, and the questions that remain unresolved—so you can form
+              a view without losing the evidence.
             </p>
             <Link href="/about" className="text-link">
               Inside our approach <MoveRight size={19} />
@@ -139,9 +139,8 @@ export default function Home() {
           </div>
         </section>
         <p className="prototype-note">
-          A course prototype with curated reference briefs. This edition is a
-          dated source snapshot, not a live news feed. Briefs await human
-          editorial approval.
+          Newsren shows the date and limits of every evidence window. Coverage
+          is current to the source dates shown and is not personalized advice.
         </p>
       </main>
       <Footer />

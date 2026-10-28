@@ -10,7 +10,7 @@ export default function NotFound() {
           This question needs
           <br />a different starting point.
         </h1>
-        <p>That brief is not part of the reference edition.</p>
+        <p>That story is not in today&apos;s briefing.</p>
         <Link href="/" className="button button-dark">
           Back to the briefing
         </Link>

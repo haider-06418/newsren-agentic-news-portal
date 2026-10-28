@@ -15,15 +15,15 @@ export function AIStoryBrief({ story }: { story: Story }) {
       <div className="ai-brief-heading">
         <div>
           <p className="eyebrow">
-            <Sparkles size={12} /> AI STORY BRIEF
+            <Sparkles size={12} /> SOURCE-LINKED SUMMARY
           </p>
           <h2 id="ai-brief-title">The evidence in one glance.</h2>
         </div>
-        <span>Deterministic synthesis · no model required</span>
+        <span>Citations attached to every claim</span>
       </div>
       <p className="ai-brief-intro">
-        This summary is assembled from the claim ledger below. Its labels and
-        citations stay attached to the original evidence state.
+        The strongest supported claim, the interpretation around it, and the
+        most important open question—kept connected to the source ledger.
       </p>
       <div className="ai-brief-grid">
         {briefKinds.map((kind) => {

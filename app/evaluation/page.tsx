@@ -3,8 +3,8 @@ import { ArrowLeft, Check, MoveRight } from "lucide-react";
 import { Footer, Header } from "@/components/newsren/shell";
 
 export const metadata = {
-  title: "Release evaluation | The Newsren",
-  description: "The Newsren prototype release scorecard and limitations.",
+  title: "Trust & safeguards | The Newsren",
+  description: "How Newsren measures trust, usefulness, accessibility, latency, and cost.",
 };
 
 const checks = [
@@ -12,7 +12,7 @@ const checks = [
     name: "Trust",
     measure: "100% citation coverage",
     detail:
-      "Every supported claim retains source IDs; simulated updates are labeled before their text.",
+      "Every supported claim retains its source IDs; illustrative updates are labeled before their text.",
   },
   {
     name: "Usefulness",
@@ -36,7 +36,7 @@ const checks = [
     name: "Cost",
     measure: "$0.00 default inference",
     detail:
-      "The public prototype does not call a model unless an operator explicitly configures an optional provider.",
+      "Newsren's default evidence selector does not call a model unless an optional provider is explicitly configured.",
   },
 ];
 
@@ -49,12 +49,12 @@ export default function EvaluationPage() {
           <ArrowLeft size={14} /> Our approach
         </Link>
         <div className="evaluation-heading">
-          <p className="eyebrow">WEEK 01 RELEASE GATE</p>
-          <h1>Useful is not enough. Show the evidence.</h1>
+          <p className="eyebrow">PRODUCT SAFEGUARDS</p>
+          <h1>Trust should be inspectable.</h1>
           <p>
-            This scorecard makes the prototype&apos;s release criteria visible. It
-            is a bounded course evaluation—not a claim of production
-            certification or continuous monitoring.
+            Newsren publishes the checks behind its evidence experience so
+            readers can see what is measured, what passes, and what still
+            requires human judgment.
           </p>
         </div>
         <div className="evaluation-grid">
@@ -73,13 +73,13 @@ export default function EvaluationPage() {
         <section className="evaluation-boundary">
           <div>
             <p className="eyebrow">WHAT THIS DOES NOT PROVE</p>
-            <h2>A prototype score is a starting point.</h2>
+            <h2>Automated checks are only a starting point.</h2>
           </div>
           <p>
             The checks do not replace independent accessibility testing,
             newsroom review, security assessment, live-source monitoring, or
-            evaluation with representative readers. They confirm the Week 1
-            implementation contract and make its limits inspectable.
+            evaluation with representative readers. They make the product&apos;s
+            current quality boundaries visible.
           </p>
           <Link href="/stories/international-student-policy" className="button button-dark">
             Inspect the flagship brief <MoveRight size={16} />
