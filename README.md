@@ -8,6 +8,14 @@ The original product brief is preserved in [`docs/Newsren_Plan.pdf`](docs/Newsre
 
 ![The Newsren Editorial Navy homepage](docs/previews/editorial-navy-home.png)
 
+## Live demo
+
+[Open the production Newsren portal](https://newsren-agentic-news-portal.vercel.app)
+
+The production project runs on Vercel's Hobby plan and automatically deploys
+changes pushed to `main`. The dependable default demo requires no model API key
+or paid runtime service.
+
 ## Product thesis
 
 Newsren is not a generic news chatbot and does not try to produce a single authoritative opinion. It creates an evidence map around a developing question:
@@ -43,7 +51,10 @@ Sports is a sensible future desk for rule changes, governance, labor, safety, an
 
 ## Architecture
 
-The UI is built with TypeScript, React, Vinext, and Tailwind CSS and is deployable as a Cloudflare Worker through OpenAI Sites. This is a weekly prototype, so the architecture deliberately avoids model hosting and production-scale infrastructure:
+The UI is built with TypeScript, React, Vinext, Next.js, and Tailwind CSS. It
+supports the original Cloudflare Worker/OpenAI Sites build and a native Next.js
+deployment on Vercel. This is a weekly prototype, so the architecture
+deliberately avoids model hosting and production-scale infrastructure:
 
 - Seeded evidence bundles and reviewed outputs power the dependable public demo.
 - A small inference adapter can call a free external API if one is configured.
@@ -71,6 +82,9 @@ The current experience includes four reference briefs, desk filters, search, exp
 The local preview normally serves at `http://127.0.0.1:5173`. Stop it with Ctrl+C when finished; start it again with `npm run dev`. No background service is required while the project is idle.
 
 Run `npm run evaluate` for the trust, usefulness, accessibility-structure, latency, and default-cost release gate. See the [evaluation report](docs/EVALUATION.md), [demo walkthrough](docs/DEMO_WALKTHROUGH.md), and phase handoffs for scope, limitations, and verification.
+
+Use `npm run build` for the Vinext/Cloudflare target and `npm run build:vercel`
+for the native Next.js/Vercel target.
 
 ## Editorial safety
 
