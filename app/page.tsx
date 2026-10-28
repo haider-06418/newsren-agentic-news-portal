@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Suspense } from "react";
 import {
   ArrowDown,
   ArrowUpRight,
@@ -97,7 +98,23 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <StoryExplorer />
+        <Suspense
+          fallback={
+            <section id="stories" className="stories-section" aria-busy="true">
+              <div className="section-heading">
+                <div>
+                  <p className="eyebrow">THE READING ROOM</p>
+                  <h2>
+                    Follow your curiosity<span>.</span>
+                  </h2>
+                </div>
+                <span className="edition-count">LOADING THE EDITION</span>
+              </div>
+            </section>
+          }
+        >
+          <StoryExplorer />
+        </Suspense>
         <section className="reader-note">
           <div className="reader-note-icon">
             <BookOpen size={29} strokeWidth={1.3} />
