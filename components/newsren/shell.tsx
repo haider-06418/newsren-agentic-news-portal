@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight, Asterisk, Bell, MoveRight } from "lucide-react";
-import { desks, deskSlug } from "@/lib/newsroom";
+import { desks, deskSlug, snapshotDate } from "@/lib/newsroom";
 export function Brand() {
   return (
     <Link href="/" className="brand" aria-label="The Newsren home">
@@ -20,7 +20,7 @@ export function Header() {
       <div className="edition-bar">
         <span>EVIDENCE-LED NEWS INTELLIGENCE</span>
         <span>
-          SOURCE INDEX <i /> UPDATED OCT 27, 2026
+          SOURCE INDEX <i /> UPDATED {snapshotDate.toUpperCase()}
         </span>
       </div>
       <header className="site-header">
@@ -76,7 +76,7 @@ export function Footer() {
           Original sources · Visible uncertainty · Reader-controlled context
         </p>
         <p>
-          Coverage updated Oct 27, 2026
+          Coverage updated {snapshotDate}
           <br />© 2026 The Newsren ·{" "}
           <a
             href="https://github.com/haider-06418/newsren-agentic-news-portal"

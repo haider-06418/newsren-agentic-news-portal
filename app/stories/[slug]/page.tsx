@@ -21,7 +21,6 @@ import {
   getStory,
   stories,
   formatSourceDate,
-  snapshotDate,
 } from "@/lib/newsroom";
 export async function generateMetadata({
   params,
@@ -66,7 +65,7 @@ export default async function StoryPage({
             <div>
               <strong>The Newsren evidence desk</strong>
               <span>
-                Updated · {snapshotDate} · {story.readingMinutes} min
+                Updated · {formatSourceDate(story.updatedAt)} · {story.readingMinutes} min
                 read
               </span>
             </div>
@@ -85,8 +84,8 @@ export default async function StoryPage({
               <Info size={17} />
               <p>
                 Newsren connects the original evidence behind this story. This
-                page reflects a dated source window and does not claim a newly
-                verified development.
+                page reflects the dated source window shown below; check the
+                original records for later developments.
                 {story.desk === "Education & Immigration" ||
                 story.desk === "Policy & Society"
                   ? " General information, not individual immigration advice."

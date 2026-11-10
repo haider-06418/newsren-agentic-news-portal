@@ -55,10 +55,11 @@ export default function AboutPage() {
         <div className="about-disclosure">
           <h2>Coverage boundaries</h2>
           <p>
-            Newsren currently covers four developing questions using sources
-            consulted on October 27, 2026. Every story shows its evidence
-            window and unresolved claims. Coverage is not a live feed and does
-            not provide case-specific immigration or investment advice.
+            Newsren currently covers five developing questions across four
+            desks. The latest evidence window was refreshed on November 10,
+            2026, while each story preserves its own update and source dates.
+            Coverage is not a live feed and does not provide case-specific
+            immigration or investment advice.
           </p>
           <p>
             Ask Newsren is bounded to each story&apos;s evidence. Saved follows stay

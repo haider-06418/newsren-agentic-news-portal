@@ -103,6 +103,6 @@ test("question classification stays deterministic", () => {
       "What remains uncertain?",
       studentStory,
     ).claimIds,
-    ["c4"],
+    ["c5"],
   );
 });

@@ -11,7 +11,7 @@ import {
 import { Header, Footer } from "@/components/newsren/shell";
 import { Illustration } from "@/components/newsren/illustration";
 import { StoryExplorer } from "@/components/newsren/story-explorer";
-import { stories } from "@/lib/newsroom";
+import { desks, snapshotDate, stories } from "@/lib/newsroom";
 export default function Home() {
   const featured = stories[0];
   return (
@@ -23,8 +23,8 @@ export default function Home() {
             <span className="status-dot" /> TODAY&apos;S BRIEFING
           </p>
           <p>
-            Tuesday, October 27, 2026 <span className="intro-separator">/</span>{" "}
-            4 developing stories across 4 desks
+            Tuesday, {snapshotDate} <span className="intro-separator">/</span>{" "}
+            {stories.length} developing stories across {desks.length} desks
           </p>
         </section>
         <section className="hero">
@@ -56,7 +56,8 @@ export default function Home() {
           <div className="hero-feature">
             <Illustration kind="campus" className="feature-illustration" />
             <div className="feature-tag">
-              <span className="status-dot" /> LEAD BRIEF <span>01 / 04</span>
+              <span className="status-dot" /> LEAD BRIEF{" "}
+              <span>01 / {String(stories.length).padStart(2, "0")}</span>
             </div>
             <div className="feature-caption">
               <p className="eyebrow">EDUCATION & IMMIGRATION</p>
@@ -69,7 +70,10 @@ export default function Home() {
             <div className="source-stamp">
               <Layers3 size={20} />
               <div>
-                <strong>2 original sources</strong>
+                <strong>
+                  {featured.sources.length} original{" "}
+                  {featured.sources.length === 1 ? "source" : "sources"}
+                </strong>
                 <span>One connected starting point</span>
               </div>
             </div>

@@ -20,6 +20,8 @@ export function StoryExplorer() {
         .toLowerCase()
         .includes(query.trim().toLowerCase()),
   );
+  const storyCount = String(stories.length).padStart(2, "0");
+  const deskCount = String(desks.length).padStart(2, "0");
   function selectDesk(slug: string) {
     const params = new URLSearchParams(searchParams.toString());
     if (slug === "all") params.delete("desk");
@@ -38,7 +40,9 @@ export function StoryExplorer() {
             Stories worth understanding<span>.</span>
           </h2>
         </div>
-        <span className="edition-count">04 STORIES / 04 DESKS</span>
+        <span className="edition-count">
+          {storyCount} STORIES / {deskCount} DESKS
+        </span>
       </div>
       <div className="explorer-tools">
         <div className="filter-tabs" role="group" aria-label="Filter by desk">
@@ -46,7 +50,7 @@ export function StoryExplorer() {
             onClick={() => selectDesk("all")}
             aria-pressed={active === "all"}
           >
-            All stories <span>04</span>
+            All stories <span>{storyCount}</span>
           </button>
           {desks.map((desk) => (
             <button

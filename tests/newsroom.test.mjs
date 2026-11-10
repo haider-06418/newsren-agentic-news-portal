@@ -64,3 +64,18 @@ test("seeded updates are explicitly simulated and reference real story claims", 
       assert.ok(claimIds.has(id), `${story.slug}: unknown affected claim ${id}`);
   }
 });
+
+test("current immigration coverage distinguishes a final rule from a proposal", () => {
+  const finalRuleBrief = getStory("international-student-policy");
+  const proposalBrief = getStory("optional-practical-training-fee-proposal");
+  assert.ok(finalRuleBrief);
+  assert.ok(proposalBrief);
+  assert.ok(finalRuleBrief.sources.some((source) => source.type === "Final rule"));
+  assert.ok(proposalBrief.sources.some((source) => source.type === "Proposed rule"));
+  assert.match(proposalBrief.brief, /proposal, not a final rule/i);
+  assert.ok(
+    proposalBrief.claims.some(
+      (claim) => claim.kind === "Unresolved" && /finalize|withdraw/i.test(claim.text),
+    ),
+  );
+});
