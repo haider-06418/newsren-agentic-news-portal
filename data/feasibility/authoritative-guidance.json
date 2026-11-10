@@ -1,0 +1,25 @@
+{
+  "dataset": "Newsren authoritative guidance registry",
+  "retrievedAt": "2026-10-27",
+  "access": "available-public-web",
+  "records": [
+    {
+      "id": "guidance-state-visa",
+      "title": "Student Visa",
+      "summary": "The course of study and institution help determine the appropriate visa category. Academic study commonly uses an F visa while vocational study commonly uses an M visa.",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+      "publishedAt": null,
+      "publisher": "U.S. Department of State",
+      "sourceType": "Agency guidance"
+    },
+    {
+      "id": "guidance-f1-j1",
+      "title": "F-1 versus J-1 Visas",
+      "summary": "F-1 and J-1 programs can both support university study but have different requirements and different school or sponsor support contacts.",
+      "url": "https://j1visa.state.gov/basics/other-u-s-visas/studying-at-u-s-universities-and-colleges-f-1-versus-j-1-visas/",
+      "publishedAt": null,
+      "publisher": "BridgeUSA, U.S. Department of State",
+      "sourceType": "Agency guidance"
+    }
+  ]
+}

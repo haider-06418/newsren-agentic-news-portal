@@ -1,0 +1,48 @@
+{
+  "dataset": "Federal Register API",
+  "retrievedAt": "2026-11-10",
+  "query": "\"F-1\" student visa",
+  "access": "available-no-key",
+  "records": [
+    {
+      "id": "fr-2025-16554",
+      "documentNumber": "2025-16554",
+      "title": "Establishing a Fixed Time Period of Admission and an Extension of Stay Procedure for Nonimmigrant Academic Students, Exchange Visitors, and Representatives of Foreign Information Media",
+      "documentType": "Proposed Rule",
+      "abstract": "DHS proposed changing F, J, and I classifications from duration of status to admission for a fixed time period.",
+      "url": "https://www.federalregister.gov/documents/2025/08/28/2025-16554/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant",
+      "publishedAt": "2025-08-28",
+      "agencies": ["Homeland Security Department"]
+    },
+    {
+      "id": "fr-2026-14439",
+      "documentNumber": "2026-14439",
+      "title": "Establishing a Fixed Time Period of Admission and an Extension of Stay Procedure for Nonimmigrant Academic Students, Exchange Visitors, and Representatives of Foreign Information Media",
+      "documentType": "Rule",
+      "abstract": "DHS amended its regulations to change the admission period in the F, J, and I classifications from duration of status to a fixed time period and added extension requirements.",
+      "url": "https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant",
+      "publishedAt": "2026-07-17",
+      "agencies": ["Homeland Security Department"]
+    },
+    {
+      "id": "fr-2026-20660",
+      "documentNumber": "2026-20660",
+      "title": "Optional Practical Training Fees",
+      "documentType": "Proposed Rule",
+      "abstract": "This proposed rule would introduce fees for F-1 nonimmigrant students seeking initial or subsequent Optional Practical Training through a certified institution.",
+      "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees",
+      "publishedAt": "2026-10-08",
+      "agencies": ["Homeland Security Department"]
+    },
+    {
+      "id": "fr-2024-27787",
+      "documentNumber": "2024-27787",
+      "title": "Employment Authorization for Lebanese F-1 Nonimmigrant Students Experiencing Severe Economic Hardship as a Direct Result of the Current Crisis in Lebanon",
+      "documentType": "Notice",
+      "abstract": "DHS suspended certain requirements for eligible Lebanese F-1 students so they could request employment authorization, work additional hours, or reduce course load while maintaining status.",
+      "url": "https://www.federalregister.gov/documents/2024/11/27/2024-27787/employment-authorization-for-lebanese-f-1-nonimmigrant-students-experiencing-severe-economic",
+      "publishedAt": "2024-11-27",
+      "agencies": ["Homeland Security Department", "U.S. Immigration and Customs Enforcement"]
+    }
+  ]
+}

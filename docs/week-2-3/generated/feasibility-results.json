@@ -1,0 +1,62 @@
+{
+  "assessmentDate": "2026-11-10",
+  "hypothesis": "TF-IDF similarity will improve cross-dataset policy-document matching over raw keyword overlap on a small team-labeled feasibility set.",
+  "datasets": [
+    {
+      "name": "Federal Register API",
+      "access": "available-no-key",
+      "records": 4
+    },
+    {
+      "name": "Newsren authoritative guidance registry",
+      "access": "available-public-web",
+      "records": 2
+    },
+    {
+      "name": "GDELT DOC 2.0",
+      "access": "public-api-rate-limited-during-assessment",
+      "records": 0
+    }
+  ],
+  "sample": {
+    "records": 6,
+    "labeledPairs": 10,
+    "crossDatasetPairs": 5,
+    "coverage": {
+      "requiredFieldCoverage": 1,
+      "publicationDateCoverage": 0.6666666666666666
+    }
+  },
+  "algorithms": {
+    "keywordOverlap": {
+      "threshold": 4,
+      "truePositive": 2,
+      "falsePositive": 3,
+      "trueNegative": 0,
+      "falseNegative": 5,
+      "precision": 0.4,
+      "recall": 0.2857142857142857,
+      "accuracy": 0.2,
+      "f1": 0.3333333333333333
+    },
+    "tfidfCosine": {
+      "threshold": 0.1,
+      "truePositive": 2,
+      "falsePositive": 1,
+      "trueNegative": 2,
+      "falseNegative": 5,
+      "precision": 0.6666666666666666,
+      "recall": 0.2857142857142857,
+      "accuracy": 0.4,
+      "f1": 0.4
+    }
+  },
+  "conclusion": "The sample supports the matching hypothesis, but its size is too small for a general performance claim.",
+  "risks": [
+    "The labeled sample is intentionally small and team-authored.",
+    "Guidance pages without publication dates weaken temporal reasoning.",
+    "Topical similarity does not prove that two documents describe the same policy event.",
+    "The GDELT API returned HTTP 429 during the access test, so media-corpus ingestion requires caching, backoff, or another source.",
+    "All generated claims still require source validation and human review."
+  ]
+}

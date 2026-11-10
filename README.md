@@ -2,7 +2,7 @@
 
 The Newsren is an agentic news-intelligence prototype for understanding evolving, contested, and high-uncertainty stories. It helps readers separate verified facts from interpretation, compare credible perspectives, understand who is affected, and identify what to watch next.
 
-> Week 1 Assignment for the course 49-772 A2 **Software Engineering Management, Fall 2026 offering at Carnegie Mellon University - Silicon Valley**.
+> Team course project for 49-772 A2 **Software Engineering Management, Fall 2026 at Carnegie Mellon University - Silicon Valley**, extending the original Week 1 idea and prototype.
 
 The original product brief is preserved in [`docs/Newsren_Plan.pdf`](docs/Newsren_Plan.pdf).
 
@@ -38,7 +38,7 @@ The flagship prototype story focuses on changing United States rules and guidanc
 
 Sports is a sensible future desk for rule changes, governance, labor, safety, and disputed decisions. It is intentionally outside the first vertical slice so Week 1 remains focused and testable.
 
-## Week 1 prototype
+## Product foundation
 
 - Editorial homepage and four desks
 - Four end-to-end evidence-grounded reference briefs
@@ -76,6 +76,16 @@ npm run dev
 ```
 
 Phases 1 through 3 and the Phase 4 release candidate are implemented. No model or API key is required to run the prototype.
+
+## Weeks 2-3 architecture and feasibility assessment
+
+The team-project extension adds a reproducible public-data feasibility experiment for international-student policy. It normalizes Federal Register records and authoritative agency guidance into a canonical schema, then compares keyword overlap with TF-IDF/cosine matching on a small labeled set.
+
+```bash
+npm run feasibility
+```
+
+See the [Weeks 2-3 report source](docs/week-2-3/REPORT.md), [architecture](docs/week-2-3/ARCHITECTURE.md), [dataset assessment](docs/week-2-3/DATASETS.md), and [teamwork evidence plan](docs/week-2-3/TEAMWORK.md).
 
 The current experience includes four reference briefs, desk filters, search, expandable evidence, source dates and provenance, an AI Story Brief, and the contextual Ask Newsren pane. Ask Newsren returns validated story-scoped answers with claim-level citations or explicitly abstains when evidence is missing. Student, educator, and professional modes reuse the same claim ledger. Readers can save one question per story locally and inspect explicitly simulated material-change events in the Your follows desk.
 

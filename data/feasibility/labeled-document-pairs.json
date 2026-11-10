@@ -1,0 +1,12 @@
+[
+  { "left": "fr-2025-16554", "right": "fr-2026-14439", "related": true, "reason": "proposed and final versions of the same policy" },
+  { "left": "fr-2026-14439", "right": "guidance-state-visa", "related": true, "reason": "fixed admission period rule and student visa guidance" },
+  { "left": "fr-2026-14439", "right": "guidance-f1-j1", "related": true, "reason": "rule covers F and J classifications described by the guidance" },
+  { "left": "fr-2026-20660", "right": "guidance-state-visa", "related": true, "reason": "OPT proposal concerns F-1 students" },
+  { "left": "fr-2026-20660", "right": "guidance-f1-j1", "related": true, "reason": "OPT proposal concerns the F-1 program described by the guidance" },
+  { "left": "fr-2024-27787", "right": "guidance-state-visa", "related": true, "reason": "notice changes employment conditions for a defined F-1 population" },
+  { "left": "fr-2024-27787", "right": "fr-2026-20660", "related": false, "reason": "both concern F-1 students but are different policy developments" },
+  { "left": "fr-2024-27787", "right": "fr-2026-14439", "related": false, "reason": "country-specific relief and general admission-period rules are distinct developments" },
+  { "left": "fr-2025-16554", "right": "fr-2026-20660", "related": false, "reason": "admission duration and OPT fees are distinct policy developments" },
+  { "left": "guidance-state-visa", "right": "guidance-f1-j1", "related": true, "reason": "complementary student-program guidance" }
+]
