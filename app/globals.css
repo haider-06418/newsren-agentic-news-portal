@@ -2764,6 +2764,8 @@ main,
 }
 
 .edition-bar {
+  max-width: none;
+  padding-inline: max(64px, calc((100vw - 1312px) / 2));
   height: 42px;
   border: 0;
   background: var(--navy);
