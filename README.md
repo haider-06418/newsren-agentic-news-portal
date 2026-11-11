@@ -93,7 +93,7 @@ The team-project extension adds a reproducible public-data feasibility experimen
 npm run feasibility
 ```
 
-See the [Weeks 2-3 report source](docs/week-2-3/REPORT.md), [architecture](docs/week-2-3/ARCHITECTURE.md), [dataset assessment](docs/week-2-3/DATASETS.md), and [teamwork evidence plan](docs/week-2-3/TEAMWORK.md).
+See the [editable Google Docs-ready report](docs/week-2-3/newsren-week2-3-architecture-feasibility-google-docs.docx), [report source](docs/week-2-3/REPORT.md), [architecture](docs/week-2-3/ARCHITECTURE.md), [dataset assessment](docs/week-2-3/DATASETS.md), and [teamwork evidence plan](docs/week-2-3/TEAMWORK.md).
 
 The current experience includes four reference briefs, desk filters, search, expandable evidence, source dates and provenance, an AI Story Brief, and the contextual Ask Newsren pane. Ask Newsren returns validated story-scoped answers with claim-level citations or explicitly abstains when evidence is missing. Student, educator, and professional modes reuse the same claim ledger. Readers can save one question per story locally and inspect explicitly simulated material-change events in the Your follows desk.
 
