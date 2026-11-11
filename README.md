@@ -8,6 +8,14 @@ The original product brief is preserved in [`docs/Newsren_Plan.pdf`](docs/Newsre
 
 ![The Newsren product homepage](docs/previews/product-home.png)
 
+## Team
+
+- Mohammed Haider Abbas
+- Ankit Ojha
+- Nikhil Gaurav
+
+
+
 ## Live demo
 
 [Open the production Newsren portal](https://newsren-agentic-news-portal.vercel.app)
